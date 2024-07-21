@@ -1,8 +1,8 @@
 - name: file level variables
   become: yes
   hosts: localhost
-  vars:
-   - vars.yaml
+  vars_files:
+  - vars.yaml
   tasks:
   - name: print info
     ansible.builtin.debug:
