@@ -1,5 +1,6 @@
 - name: PLAY-1
   hosts: localhost
+  become: yes
   tasks:
   - name: PLAY-1 and TASK-1
     ansible.builtin.debug:
