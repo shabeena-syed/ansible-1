@@ -1,5 +1,5 @@
-- name: variables
-  hosts: localhost
+- hosts: localhost
+  name: variables
   become: yes
   vars:
   #play level variable
