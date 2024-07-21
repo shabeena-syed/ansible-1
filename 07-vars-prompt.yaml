@@ -1,11 +1,11 @@
 - name: prompt level variable
   become: yes
   hosts: localhost
-  var_prompt:
-   - name: USERNAME
+  vars_prompt:
+  - name: USERNAME
      prompt: please enter ur username
      private: false
-   - name: PASSWORD
+  - name: PASSWORD
      prompt: please entr ur password
      private: true
   tasks:
