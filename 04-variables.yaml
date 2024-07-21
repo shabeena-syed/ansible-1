@@ -2,9 +2,13 @@
   hosts: localhost
   become: yes
   vars:
+  #play level variable
    name: "shabeena"
    course: "devops"
   tasks:
   - name: print information
+    vars:
+    #task level variable
+     course: "terraform"
     ansible.builtin.debug:
      msg: "hi i am {{name}} ,im learning {{course}}"
