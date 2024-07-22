@@ -2,9 +2,9 @@
   hosts: localhost
   become: yes
   tasks:
-   - name: print names
-     ansible.builtin.debug:
-      msg: " hello {{item}}"
+  - name: print names
+    ansible.builtin.debug:
+      msg: "hello {{item}}"
     loop:
     - linux
     - shell
