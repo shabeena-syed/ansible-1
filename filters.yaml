@@ -34,7 +34,7 @@
      msg: "{{numbers | unique}}"
 
 - name: print min and max
-  hosts: localhosts
+  hosts: localhost
   vars:
    ages: [25,56,78,31]
   tasks:
